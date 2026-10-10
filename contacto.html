@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contacta con Mudanzas Express. Formulario, teléfono, email, WhatsApp, ubicación y horarios de atención.">
+  <title>Contacto - Mudanzas Express</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { 50:'#EFF6FF', 100:'#DBEAFE', 500:'#3B82F6', 700:'#1D4ED8', 800:'#1E40AF', 900:'#1E3A8A' },
+            accent: { 50:'#FFF7ED', 100:'#FFEDD5', 500:'#F97316', 600:'#EA580C', 700:'#C2410C' }
+          },
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="font-sans text-gray-800 antialiased">
+
+  <!-- NAVBAR -->
+  <nav class="navbar fixed top-0 left-0 right-0 z-50 bg-brand-800 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center gap-2 text-white">
+          <div class="w-10 h-10 bg-accent-500 rounded-lg flex items-center justify-center">
+            <i data-lucide="truck" class="w-6 h-6 text-white"></i>
+          </div>
+          <span class="font-extrabold text-xl">Mudanzas<span class="text-accent-500">Express</span></span>
+        </a>
+        <div class="hidden lg:flex items-center gap-8">
+          <a href="index.html" class="nav-link text-white/90 hover:text-white font-medium">Inicio</a>
+          <a href="nosotros.html" class="nav-link text-white/90 hover:text-white font-medium">Nosotros</a>
+          <a href="servicios.html" class="nav-link text-white/90 hover:text-white font-medium">Servicios</a>
+          <a href="galeria.html" class="nav-link text-white/90 hover:text-white font-medium">Galería</a>
+          <a href="precios.html" class="nav-link text-white/90 hover:text-white font-medium">Precios</a>
+          <a href="contacto.html" class="nav-link text-white font-medium active">Contacto</a>
+        </div>
+        <div class="flex items-center gap-3">
+          <a href="tel:+56223456789" class="hidden md:inline-flex btn-primary text-sm py-2 px-4">
+            Llamar ahora <i data-lucide="phone" class="w-4 h-4"></i>
+          </a>
+          <button class="lg:hidden text-white p-2" data-menu-btn><i data-lucide="menu" class="w-7 h-7"></i></button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu-overlay" data-menu-overlay></div>
+  <div class="mobile-menu" data-mobile-menu>
+    <button class="absolute top-6 right-6 text-white p-2" data-menu-close><i data-lucide="x" class="w-7 h-7"></i></button>
+    <div class="flex flex-col gap-2">
+      <a href="index.html" class="text-white/90 font-medium py-3 border-b border-white/10">Inicio</a>
+      <a href="nosotros.html" class="text-white/90 font-medium py-3 border-b border-white/10">Nosotros</a>
+      <a href="servicios.html" class="text-white/90 font-medium py-3 border-b border-white/10">Servicios</a>
+      <a href="galeria.html" class="text-white/90 font-medium py-3 border-b border-white/10">Galería</a>
+      <a href="precios.html" class="text-white/90 font-medium py-3 border-b border-white/10">Precios</a>
+      <a href="contacto.html" class="text-white font-semibold text-lg py-3 border-b border-white/10">Contacto</a>
+      <a href="tel:+56223456789" class="btn-primary mt-6 justify-center">Llamar ahora</a>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <header class="bg-brand-800 pt-32 pb-16 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute top-0 right-0 w-96 h-96 bg-accent-500 rounded-full blur-3xl"></div>
+    </div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav class="mb-6 text-blue-200 text-sm animate-fade-down">
+        <a href="index.html" class="hover:text-white">Inicio</a>
+        <span class="mx-2">/</span>
+        <span class="text-white">Contacto</span>
+      </nav>
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-4 animate-fade-up">Contacta con nosotros</h1>
+      <p class="text-xl text-blue-100 max-w-2xl animate-fade-up delay-100">Estamos a una llamada de distancia. Te respondemos en menos de 24 horas.</p>
+    </div>
+  </header>
+
+  <!-- TARJETAS DE CONTACTO RÁPIDO -->
+  <section class="py-12 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-6 -mt-20 relative z-10">
+        <a href="tel:+56223456789" class="animate-on-scroll bg-white p-6 rounded-2xl shadow-xl card-hover block">
+          <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center mb-4">
+            <i data-lucide="phone" class="w-7 h-7 text-blue-700"></i>
+          </div>
+          <h3 class="font-bold text-lg mb-1">Llámanos</h3>
+          <p class="text-gray-600 text-sm mb-2">Lun–Vie 8:00 a 20:00</p>
+          <p class="text-blue-700 font-bold">+56 2 2345 6789</p>
+        </a>
+        <a href="mailto:info@mudanzasexpress.cl" class="animate-on-scroll bg-white p-6 rounded-2xl shadow-xl card-hover block" data-delay="100">
+          <div class="w-14 h-14 bg-orange-100 rounded-2xl flex items-center justify-center mb-4">
+            <i data-lucide="mail" class="w-7 h-7 text-orange-500"></i>
+          </div>
+          <h3 class="font-bold text-lg mb-1">Email</h3>
+          <p class="text-gray-600 text-sm mb-2">Te respondemos en 24h</p>
+          <p class="text-orange-500 font-bold break-all">info@mudanzasexpress.cl</p>
+        </a>
+        <a href="#" class="animate-on-scroll bg-white p-6 rounded-2xl shadow-xl card-hover block" data-delay="200">
+          <div class="w-14 h-14 bg-green-100 rounded-2xl flex items-center justify-center mb-4">
+            <i data-lucide="message-circle" class="w-7 h-7 text-green-600"></i>
+          </div>
+          <h3 class="font-bold text-lg mb-1">WhatsApp</h3>
+          <p class="text-gray-600 text-sm mb-2">Respuesta inmediata</p>
+          <p class="text-green-600 font-bold">+56 9 1234 5678</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULARIO + INFO -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-3 gap-10">
+
+        <!-- FORMULARIO -->
+        <div class="lg:col-span-2 animate-on-scroll">
+          <div class="bg-white rounded-2xl shadow-xl p-8 md:p-10">
+            <h2 class="text-3xl font-bold text-gray-900 mb-2">Solicita tu presupuesto</h2>
+            <p class="text-gray-600 mb-8">Rellena el formulario y te contactaremos en menos de 24h con un presupuesto cerrado.</p>
+
+            <!-- Mensaje de éxito -->
+            <div class="hidden mb-6 p-4 bg-green-50 border border-green-200 rounded-lg flex items-start gap-3" data-success-message>
+              <i data-lucide="check-circle-2" class="w-6 h-6 text-green-500 flex-shrink-0"></i>
+              <div>
+                <p class="font-semibold text-green-800">¡Mensaje enviado correctamente!</p>
+                <p class="text-sm text-green-700">Nos pondremos en contacto contigo muy pronto.</p>
+              </div>
+            </div>
+
+            <form data-contact-form class="space-y-5">
+              <div class="grid md:grid-cols-2 gap-5">
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-2">Nombre completo *</label>
+                  <input type="text" name="nombre" required class="form-input" placeholder="Tu nombre">
+                  <p class="error-message" data-error="nombre"></p>
+                </div>
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-2">Email *</label>
+                  <input type="email" name="email" required class="form-input" placeholder="tu@email.com">
+                  <p class="error-message" data-error="email"></p>
+                </div>
+              </div>
+
+              <div class="grid md:grid-cols-2 gap-5">
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-2">Teléfono</label>
+                  <input type="tel" name="telefono" class="form-input" placeholder="+56 9 1234 5678">
+                  <p class="error-message" data-error="telefono"></p>
+                </div>
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-2">Tipo de servicio *</label>
+                  <select name="servicio" required class="form-input">
+                    <option value="">Selecciona un servicio</option>
+                    <option value="local">Mudanza local</option>
+                    <option value="nacional">Mudanza nacional</option>
+                    <option value="embalaje">Embalaje profesional</option>
+                    <option value="guardamuebles">Guardamuebles</option>
+                    <option value="oficinas">Mudanza de oficinas</option>
+                    <option value="especial">Transporte especial</option>
+                  </select>
+                  <p class="error-message" data-error="servicio"></p>
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2">Mensaje *</label>
+                <textarea name="mensaje" rows="5" required class="form-input" placeholder="Cuéntanos los detalles: origen, destino, fecha aproximada, volumen..."></textarea>
+                <p class="error-message" data-error="mensaje"></p>
+              </div>
+
+              <div>
+                <label class="flex items-start gap-3 cursor-pointer">
+                  <input type="checkbox" name="privacidad" required class="mt-1 w-4 h-4 accent-blue-700">
+                  <span class="text-sm text-gray-600">He leído y acepto la <a href="privacidad.html" class="text-blue-700 underline">política de privacidad</a> *</span>
+                </label>
+                <p class="error-message" data-error="privacidad"></p>
+              </div>
+
+              <button type="submit" class="btn-primary w-full justify-center" data-submit-btn>
+                <i data-lucide="send" class="w-4 h-4"></i>
+                Enviar mensaje
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- INFO LATERAL -->
+        <aside class="space-y-6">
+          <!-- Dirección -->
+          <div class="animate-on-scroll bg-white rounded-2xl shadow-xl p-6" data-delay="100">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
+                <i data-lucide="map-pin" class="w-6 h-6 text-blue-700"></i>
+              </div>
+              <h3 class="text-xl font-bold">Nuestra oficina</h3>
+            </div>
+            <p class="text-gray-700 leading-relaxed">Av. Apoquindo 4711, Las Condes<br>Santiago, Chile</p>
+            <a href="https://maps.google.com/?q=Las+Condes,+Santiago,+Chile" target="_blank" rel="noopener" class="inline-flex items-center gap-1 text-blue-700 hover:text-blue-800 font-semibold text-sm mt-3">
+              Ver en Google Maps <i data-lucide="external-link" class="w-4 h-4"></i>
+            </a>
+          </div>
+
+          <!-- Horarios -->
+          <div class="animate-on-scroll bg-white rounded-2xl shadow-xl p-6" data-delay="200">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center">
+                <i data-lucide="clock" class="w-6 h-6 text-orange-500"></i>
+              </div>
+              <h3 class="text-xl font-bold">Horarios</h3>
+            </div>
+            <div data-render="horarios"></div>
+          </div>
+
+          <!-- Redes -->
+          <div class="animate-on-scroll bg-gradient-to-br from-brand-800 to-brand-900 rounded-2xl shadow-xl p-6 text-white" data-delay="300">
+            <h3 class="text-xl font-bold mb-4">Síguenos</h3>
+            <div class="grid grid-cols-2 gap-3">
+              <a href="#" class="flex items-center gap-2 bg-white/10 hover:bg-white/20 p-3 rounded-lg transition">
+                <i data-lucide="facebook" class="w-5 h-5"></i> Facebook
+              </a>
+              <a href="#" class="flex items-center gap-2 bg-white/10 hover:bg-white/20 p-3 rounded-lg transition">
+                <i data-lucide="instagram" class="w-5 h-5"></i> Instagram
+              </a>
+              <a href="#" class="flex items-center gap-2 bg-white/10 hover:bg-white/20 p-3 rounded-lg transition">
+                <i data-lucide="twitter" class="w-5 h-5"></i> Twitter
+              </a>
+              <a href="#" class="flex items-center gap-2 bg-white/10 hover:bg-white/20 p-3 rounded-lg transition">
+                <i data-lucide="linkedin" class="w-5 h-5"></i> LinkedIn
+              </a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAPA -->
+  <section class="bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="text-center mb-8 animate-on-scroll">
+        <span class="text-accent-500 font-bold uppercase tracking-wider text-sm">Dónde estamos</span>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mt-2">Encuéntranos</h2>
+      </div>
+      <div class="rounded-2xl overflow-hidden shadow-xl animate-on-scroll">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16625.0!2d-70.5713!3d-33.4103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c952ac6c7e99%3A0x5b8e1e0a8d5e0a0!2sLas+Condes%2C+Santiago%2C+Chile!5e0!3m2!1ses!2scl!4v1700000000000!5m2!1ses!2scl"
+          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" title="Ubicación Mudanzas Express Santiago">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-300 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div>
+          <div class="flex items-center gap-2 mb-4">
+            <div class="w-10 h-10 bg-accent-500 rounded-lg flex items-center justify-center"><i data-lucide="truck" class="w-6 h-6 text-white"></i></div>
+            <span class="font-extrabold text-xl text-white">Mudanzas<span class="text-accent-500">Express</span></span>
+          </div>
+          <p class="text-gray-400 mb-4">Tu partner de confianza para mudanzas sin estrés desde 2009.</p>
+          <div class="flex gap-3">
+            <a href="#" class="w-9 h-9 bg-gray-800 hover:bg-accent-500 rounded-lg flex items-center justify-center transition"><i data-lucide="facebook" class="w-4 h-4"></i></a>
+            <a href="#" class="w-9 h-9 bg-gray-800 hover:bg-accent-500 rounded-lg flex items-center justify-center transition"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+            <a href="#" class="w-9 h-9 bg-gray-800 hover:bg-accent-500 rounded-lg flex items-center justify-center transition"><i data-lucide="twitter" class="w-4 h-4"></i></a>
+            <a href="#" class="w-9 h-9 bg-gray-800 hover:bg-accent-500 rounded-lg flex items-center justify-center transition"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-4">Servicios</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="servicios.html#local" class="hover:text-accent-500 transition">Mudanza local</a></li>
+            <li><a href="servicios.html#nacional" class="hover:text-accent-500 transition">Mudanza nacional</a></li>
+            <li><a href="servicios.html#embalaje" class="hover:text-accent-500 transition">Embalaje profesional</a></li>
+            <li><a href="servicios.html#guardamuebles" class="hover:text-accent-500 transition">Guardamuebles</a></li>
+            <li><a href="servicios.html#oficinas" class="hover:text-accent-500 transition">Mudanza de oficinas</a></li>
+            <li><a href="servicios.html#especial" class="hover:text-accent-500 transition">Transporte especial</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-4">Enlaces</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="hover:text-accent-500 transition">Inicio</a></li>
+            <li><a href="nosotros.html" class="hover:text-accent-500 transition">Sobre nosotros</a></li>
+            <li><a href="galeria.html" class="hover:text-accent-500 transition">Galería</a></li>
+            <li><a href="precios.html" class="hover:text-accent-500 transition">Precios</a></li>
+            <li><a href="contacto.html" class="hover:text-accent-500 transition">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-4">Contacto</h4>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-start gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-accent-500 flex-shrink-0 mt-0.5"></i>Av. Apoquindo 4711, Las Condes</li>
+            <li class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-accent-500"></i><a href="tel:+56223456789" class="hover:text-accent-500 transition">+56 2 2345 6789</a></li>
+            <li class="flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4 text-accent-500"></i><a href="mailto:info@mudanzasexpress.cl" class="hover:text-accent-500 transition">info@mudanzasexpress.cl</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-400">
+        <p>© <span data-year>2026</span> Mudanzas Express. Todos los derechos reservados.</p>
+        <div class="flex gap-6">
+          <a href="privacidad.html" class="hover:text-accent-500 transition">Privacidad</a>
+          <a href="terminos.html" class="hover:text-accent-500 transition">Términos</a>
+          <a href="contacto.html" class="hover:text-accent-500 transition">Contacto</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="whatsapp-float"><i data-lucide="message-circle" class="w-7 h-7"></i></a>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/contact.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>

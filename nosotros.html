@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conoce nuestra historia, misión, visión y equipo. Más de 15 años haciendo mudanzas sin estrés.">
+  <title>Sobre nosotros - Mudanzas Express</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { 50:'#EFF6FF', 100:'#DBEAFE', 500:'#3B82F6', 700:'#1D4ED8', 800:'#1E40AF', 900:'#1E3A8A' },
+            accent: { 50:'#FFF7ED', 100:'#FFEDD5', 500:'#F97316', 600:'#EA580C', 700:'#C2410C' }
+          },
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="font-sans text-gray-800 antialiased">
+
+  <!-- NAVBAR -->
+  <nav class="navbar fixed top-0 left-0 right-0 z-50 bg-brand-800 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center gap-2 text-white">
+          <div class="w-10 h-10 bg-accent-500 rounded-lg flex items-center justify-center">
+            <i data-lucide="truck" class="w-6 h-6 text-white"></i>
+          </div>
+          <span class="font-extrabold text-xl">Mudanzas<span class="text-accent-500">Express</span></span>
+        </a>
+        <div class="hidden lg:flex items-center gap-8">
+          <a href="index.html" class="nav-link text-white/90 hover:text-white font-medium">Inicio</a>
+          <a href="nosotros.html" class="nav-link text-white font-medium active">Nosotros</a>
+          <a href="servicios.html" class="nav-link text-white/90 hover:text-white font-medium">Servicios</a>
+          <a href="galeria.html" class="nav-link text-white/90 hover:text-white font-medium">Galería</a>
+          <a href="precios.html" class="nav-link text-white/90 hover:text-white font-medium">Precios</a>
+          <a href="contacto.html" class="nav-link text-white/90 hover:text-white font-medium">Contacto</a>
+        </div>
+        <div class="flex items-center gap-3">
+          <a href="contacto.html" class="hidden md:inline-flex btn-primary text-sm py-2 px-4">
+            Cotizar ahora <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+          <button class="lg:hidden text-white p-2" data-menu-btn aria-label="Abrir menú">
+            <i data-lucide="menu" class="w-7 h-7"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu-overlay" data-menu-overlay></div>
+  <div class="mobile-menu" data-mobile-menu>
+    <button class="absolute top-6 right-6 text-white p-2" data-menu-close aria-label="Cerrar menú">
+      <i data-lucide="x" class="w-7 h-7"></i>
+    </button>
+    <div class="flex flex-col gap-2">
+      <a href="index.html" class="text-white/90 font-medium py-3 border-b border-white/10">Inicio</a>
+      <a href="nosotros.html" class="text-white font-semibold text-lg py-3 border-b border-white/10">Nosotros</a>
+      <a href="servicios.html" class="text-white/90 font-medium py-3 border-b border-white/10">Servicios</a>
+      <a href="galeria.html" class="text-white/90 font-medium py-3 border-b border-white/10">Galería</a>
+      <a href="precios.html" class="text-white/90 font-medium py-3 border-b border-white/10">Precios</a>
+      <a href="contacto.html" class="text-white/90 font-medium py-3 border-b border-white/10">Contacto</a>
+      <a href="contacto.html" class="btn-primary mt-6 justify-center">Cotizar ahora</a>
+    </div>
+  </div>
+
+  <!-- HERO compacto -->
+  <header class="bg-brand-800 pt-32 pb-20 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute top-0 right-0 w-96 h-96 bg-accent-500 rounded-full blur-3xl"></div>
+    </div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Breadcrumb -->
+      <nav class="mb-6 text-blue-200 text-sm animate-fade-down">
+        <a href="index.html" class="hover:text-white">Inicio</a>
+        <span class="mx-2">/</span>
+        <span class="text-white">Sobre nosotros</span>
+      </nav>
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-4 animate-fade-up">Sobre nosotros</h1>
+      <p class="text-xl text-blue-100 max-w-2xl animate-fade-up delay-100">Más de 15 años haciendo mudanzas sin estrés. Conoce quiénes somos y por qué miles de clientes confían en nosotros.</p>
+    </div>
+  </header>
+
+  <!-- HISTORIA -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="animate-on-scroll">
+          <span class="text-accent-500 font-bold uppercase tracking-wider text-sm">Nuestra historia</span>
+          <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mt-2 mb-6">Una empresa familiar que se convirtió en referente</h2>
+          <div class="space-y-4 text-gray-600 text-lg leading-relaxed">
+            <p>Mudanzas Express nació en 2009 en un pequeño garaje de Madrid con una sola furgoneta y un objetivo claro: ofrecer un servicio de mudanzas diferente, más cercano, más profesional y totalmente transparente.</p>
+            <p>Quince años después, contamos con una flota de más de 25 vehículos, un equipo de 40 profesionales y hemos realizado más de 5.000 mudanzas en todo Chile, sin perder nunca la cercanía y el trato personal que nos caracteriza.</p>
+            <p>Hoy somos referente en el sector gracias a nuestra apuesta por la formación continua de nuestro equipo, la incorporación constante de tecnología y, sobre todo, por escuchar a cada cliente y adaptar el servicio a sus necesidades reales.</p>
+          </div>
+          <div class="mt-8 flex items-center gap-4">
+            <div class="flex -space-x-3">
+              <img src="https://i.pravatar.cc/80?img=14" class="w-12 h-12 rounded-full border-2 border-white" alt="">
+              <img src="https://i.pravatar.cc/80?img=23" class="w-12 h-12 rounded-full border-2 border-white" alt="">
+              <img src="https://i.pravatar.cc/80?img=15" class="w-12 h-12 rounded-full border-2 border-white" alt="">
+              <img src="https://i.pravatar.cc/80?img=44" class="w-12 h-12 rounded-full border-2 border-white" alt="">
+            </div>
+            <div>
+              <div class="font-bold text-gray-900">40+ profesionales</div>
+              <div class="text-sm text-gray-500">a tu servicio</div>
+            </div>
+          </div>
+        </div>
+        <div class="animate-on-scroll relative" data-delay="200">
+          <div class="aspect-square rounded-3xl overflow-hidden shadow-2xl">
+            <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&auto=format&fit=crop&q=70" alt="Equipo Mudanzas Express" class="w-full h-full object-cover">
+          </div>
+          <!-- Card flotante -->
+          <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl max-w-xs animate-float">
+            <div class="flex items-center gap-4">
+              <div class="w-14 h-14 bg-accent-500 rounded-2xl flex items-center justify-center text-white">
+                <i data-lucide="trophy" class="w-7 h-7"></i>
+              </div>
+              <div>
+                <div class="text-2xl font-extrabold text-gray-900">4.9/5</div>
+                <div class="text-sm text-gray-500">+1.200 reseñas</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISIÓN, VISIÓN, VALORES -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 animate-on-scroll">
+        <span class="text-accent-500 font-bold uppercase tracking-wider text-sm">Lo que nos mueve</span>
+        <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mt-2 mb-4">Misión, visión y valores</h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="animate-on-scroll bg-white p-8 rounded-2xl shadow-lg card-hover">
+          <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
+            <i data-lucide="target" class="w-8 h-8 text-blue-700"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-gray-900 mb-3">Misión</h3>
+          <p class="text-gray-600 leading-relaxed">Hacer que cada mudanza sea una experiencia sencilla, segura y sin estrés, cuidando los bienes y la confianza de nuestros clientes.</p>
+        </div>
+        <div class="animate-on-scroll bg-white p-8 rounded-2xl shadow-lg card-hover" data-delay="100">
+          <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
+            <i data-lucide="eye" class="w-8 h-8 text-blue-700"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-gray-900 mb-3">Visión</h3>
+          <p class="text-gray-600 leading-relaxed">Ser la empresa de mudanzas de referencia en Chile, reconocida por nuestra calidad, innovación y compromiso con el cliente.</p>
+        </div>
+        <div class="animate-on-scroll bg-white p-8 rounded-2xl shadow-lg card-hover" data-delay="200">
+          <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
+            <i data-lucide="heart" class="w-8 h-8 text-blue-700"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-gray-900 mb-3">Valores</h3>
+          <p class="text-gray-600 leading-relaxed">Compromiso, transparencia, profesionalidad, respeto y cuidado. Estos son los pilares que guían cada uno de nuestros servicios.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ESTADÍSTICAS -->
+  <section class="py-20 bg-brand-800 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute top-0 left-0 w-96 h-96 bg-accent-500 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
+    </div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12 animate-on-scroll">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-white">Cifras que nos avalan</h2>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8" data-render="estadisticas"></div>
+    </div>
+  </section>
+
+  <!-- EQUIPO -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 animate-on-scroll">
+        <span class="text-accent-500 font-bold uppercase tracking-wider text-sm">Nuestro equipo</span>
+        <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mt-2 mb-4">Las personas detrás</h2>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto">Profesionales con experiencia, formación continua y vocación de servicio.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8" data-render="equipo"></div>
+    </div>
+  </section>
+
+  <!-- VENTAJAS -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 animate-on-scroll">
+        <span class="text-accent-500 font-bold uppercase tracking-wider text-sm">Compromiso</span>
+        <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mt-2 mb-4">Nuestras garantías</h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8" data-render="ventajas"></div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 bg-gradient-to-br from-brand-800 to-brand-900">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-on-scroll">
+      <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6">¿Hablamos?</h2>
+      <p class="text-xl text-blue-100 mb-10">Estamos a una llamada de distancia. Cuéntanos tu proyecto y te haremos una propuesta a medida.</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="contacto.html" class="btn-primary">Contactar <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+        <a href="tel:+56223456789" class="btn-secondary"><i data-lucide="phone" class="w-4 h-4"></i> +56 2 2345 6789</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER (repetido) -->
+  <footer class="bg-gray-900 text-gray-300 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div>
+          <div class="flex items-center gap-2 mb-4">
+            <div class="w-10 h-10 bg-accent-500 rounded-lg flex items-center justify-center">
+              <i data-lucide="truck" class="w-6 h-6 text-white"></i>
+            </div>
+            <span class="font-extrabold text-xl text-white">Mudanzas<span class="text-accent-500">Express</span></span>
+          </div>
+          <p class="text-gray-400 mb-4">Tu partner de confianza para mudanzas sin estrés desde 2009.</p>
+          <div class="flex gap-3">
+            <a href="#" class="w-9 h-9 bg-gray-800 hover:bg-accent-500 rounded-lg flex items-center justify-center transition"><i data-lucide="facebook" class="w-4 h-4"></i></a>
+            <a href="#" class="w-9 h-9 bg-gray-800 hover:bg-accent-500 rounded-lg flex items-center justify-center transition"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+            <a href="#" class="w-9 h-9 bg-gray-800 hover:bg-accent-500 rounded-lg flex items-center justify-center transition"><i data-lucide="twitter" class="w-4 h-4"></i></a>
+            <a href="#" class="w-9 h-9 bg-gray-800 hover:bg-accent-500 rounded-lg flex items-center justify-center transition"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-4">Servicios</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="servicios.html#local" class="hover:text-accent-500 transition">Mudanza local</a></li>
+            <li><a href="servicios.html#nacional" class="hover:text-accent-500 transition">Mudanza nacional</a></li>
+            <li><a href="servicios.html#embalaje" class="hover:text-accent-500 transition">Embalaje profesional</a></li>
+            <li><a href="servicios.html#guardamuebles" class="hover:text-accent-500 transition">Guardamuebles</a></li>
+            <li><a href="servicios.html#oficinas" class="hover:text-accent-500 transition">Mudanza de oficinas</a></li>
+            <li><a href="servicios.html#especial" class="hover:text-accent-500 transition">Transporte especial</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-4">Enlaces</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="hover:text-accent-500 transition">Inicio</a></li>
+            <li><a href="nosotros.html" class="hover:text-accent-500 transition">Sobre nosotros</a></li>
+            <li><a href="galeria.html" class="hover:text-accent-500 transition">Galería</a></li>
+            <li><a href="precios.html" class="hover:text-accent-500 transition">Precios</a></li>
+            <li><a href="contacto.html" class="hover:text-accent-500 transition">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-4">Contacto</h4>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-start gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-accent-500 flex-shrink-0 mt-0.5"></i>Av. Apoquindo 4711, Las Condes</li>
+            <li class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-accent-500"></i><a href="tel:+56223456789" class="hover:text-accent-500 transition">+56 2 2345 6789</a></li>
+            <li class="flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4 text-accent-500"></i><a href="mailto:info@mudanzasexpress.cl" class="hover:text-accent-500 transition">info@mudanzasexpress.cl</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-400">
+        <p>© <span data-year>2026</span> Mudanzas Express. Todos los derechos reservados.</p>
+        <div class="flex gap-6">
+          <a href="privacidad.html" class="hover:text-accent-500 transition">Privacidad</a>
+          <a href="terminos.html" class="hover:text-accent-500 transition">Términos</a>
+          <a href="contacto.html" class="hover:text-accent-500 transition">Contacto</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="whatsapp-float"><i data-lucide="message-circle" class="w-7 h-7"></i></a>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>

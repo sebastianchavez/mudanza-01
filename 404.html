@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página no encontrada - Mudanzas Express">
+  <title>404 - Página no encontrada | Mudanzas Express</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { 50:'#EFF6FF', 100:'#DBEAFE', 500:'#3B82F6', 700:'#1D4ED8', 800:'#1E40AF', 900:'#1E3A8A' },
+            accent: { 50:'#FFF7ED', 100:'#FFEDD5', 500:'#F97316', 600:'#EA580C', 700:'#C2410C' }
+          },
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="font-sans text-gray-800 antialiased bg-gray-50 min-h-screen flex items-center justify-center">
+
+  <div class="text-center px-4 max-w-2xl mx-auto">
+    <div class="animate-bounce-soft">
+      <i data-lucide="truck" class="w-32 h-32 mx-auto text-accent-500"></i>
+    </div>
+
+    <h1 class="text-9xl font-extrabold text-brand-800 mt-8 animate-fade-up">404</h1>
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-4 animate-fade-up delay-100">¡Ups! Página no encontrada</h2>
+    <p class="text-lg text-gray-600 mt-4 mb-8 animate-fade-up delay-200">
+      La página que buscas se ha perdido durante la mudanza. Pero no te preocupes, podemos ayudarte a encontrar lo que necesitas.
+    </p>
+
+    <div class="flex flex-wrap justify-center gap-4 animate-fade-up delay-300">
+      <a href="index.html" class="btn-primary">
+        <i data-lucide="home" class="w-4 h-4"></i>
+        Volver al inicio
+      </a>
+      <a href="contacto.html" class="btn-outline">
+        <i data-lucide="message-circle" class="w-4 h-4"></i>
+        Contactar
+      </a>
+    </div>
+
+    <div class="mt-12 pt-8 border-t border-gray-200 animate-on-scroll">
+      <p class="text-sm text-gray-500 mb-4">Quizás te interesa:</p>
+      <div class="flex flex-wrap justify-center gap-3 text-sm">
+        <a href="servicios.html" class="text-blue-700 hover:underline">→ Nuestros servicios</a>
+        <a href="precios.html" class="text-blue-700 hover:underline">→ Ver precios</a>
+        <a href="galeria.html" class="text-blue-700 hover:underline">→ Galería</a>
+      </div>
+    </div>
+  </div>
+
+  <script>lucide.createIcons();</script>
+</body>
+</html>

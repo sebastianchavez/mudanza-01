@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mudanzas Express - Empresa líder en mudanzas nacionales y locales. Presupuesto gratuito en 24h, seguro incluido y atención 24/7.">
+  <title>Mudanzas Express - Tu mudanza, sin complicaciones</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50:  '#EFF6FF',
+              100: '#DBEAFE',
+              500: '#3B82F6',
+              700: '#1D4ED8',
+              800: '#1E40AF',
+              900: '#1E3A8A'
+            },
+            accent: {
+              50:  '#FFF7ED',
+              100: '#FFEDD5',
+              500: '#F97316',
+              600: '#EA580C',
+              700: '#C2410C'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="font-sans text-gray-800 antialiased">
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar fixed top-0 left-0 right-0 z-50 bg-brand-800 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center gap-2 text-white">
+          <div class="w-10 h-10 bg-accent-500 rounded-lg flex items-center justify-center">
+            <i data-lucide="truck" class="w-6 h-6 text-white"></i>
+          </div>
+          <span class="font-extrabold text-xl">Mudanzas<span class="text-accent-500">Express</span></span>
+        </a>
+
+        <!-- Desktop nav -->
+        <div class="hidden lg:flex items-center gap-8">
+          <a href="index.html" class="nav-link text-white font-medium active">Inicio</a>
+          <a href="nosotros.html" class="nav-link text-white/90 hover:text-white font-medium">Nosotros</a>
+          <a href="servicios.html" class="nav-link text-white/90 hover:text-white font-medium">Servicios</a>
+          <a href="galeria.html" class="nav-link text-white/90 hover:text-white font-medium">Galería</a>
+          <a href="precios.html" class="nav-link text-white/90 hover:text-white font-medium">Precios</a>
+          <a href="contacto.html" class="nav-link text-white/90 hover:text-white font-medium">Contacto</a>
+        </div>
+
+        <!-- CTA + mobile -->
+        <div class="flex items-center gap-3">
+          <a href="contacto.html" class="hidden md:inline-flex btn-primary text-sm py-2 px-4">
+            Cotizar ahora
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+          <button class="lg:hidden text-white p-2" data-menu-btn aria-label="Abrir menú">
+            <i data-lucide="menu" class="w-7 h-7"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile menu overlay -->
+  <div class="mobile-menu-overlay" data-menu-overlay></div>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" data-mobile-menu>
+    <button class="absolute top-6 right-6 text-white p-2" data-menu-close aria-label="Cerrar menú">
+      <i data-lucide="x" class="w-7 h-7"></i>
+    </button>
+    <div class="flex flex-col gap-2">
+      <a href="index.html" class="text-white font-semibold text-lg py-3 border-b border-white/10">Inicio</a>
+      <a href="nosotros.html" class="text-white/90 font-medium py-3 border-b border-white/10">Nosotros</a>
+      <a href="servicios.html" class="text-white/90 font-medium py-3 border-b border-white/10">Servicios</a>
+      <a href="galeria.html" class="text-white/90 font-medium py-3 border-b border-white/10">Galería</a>
+      <a href="precios.html" class="text-white/90 font-medium py-3 border-b border-white/10">Precios</a>
+      <a href="contacto.html" class="text-white/90 font-medium py-3 border-b border-white/10">Contacto</a>
+      <a href="contacto.html" class="btn-primary mt-6 justify-center">Cotizar ahora</a>
+    </div>
+  </div>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero-pattern pt-20 relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-brand-900/50 to-transparent"></div>
+
+    <!-- Decoración -->
+    <div class="absolute top-20 right-10 w-72 h-72 bg-accent-500/10 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-10 left-10 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="text-white animate-fade-up">
+          <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
+            <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+            <span class="text-sm font-medium">+15 años de experiencia · +5.000 mudanzas realizadas</span>
+          </div>
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+            Tu mudanza,<br>
+            <span class="text-accent-500">sin complicaciones</span>
+          </h1>
+          <p class="text-xl text-blue-100 mb-8 leading-relaxed max-w-xl">
+            Nos encargamos de todo: embalaje, carga, transporte y descarga. Con seguro incluido, presupuesto cerrado y sin sorpresas.
+          </p>
+          <div class="flex flex-wrap gap-4 mb-10">
+            <a href="contacto.html" class="btn-primary text-base">
+              Solicitar cotización gratis
+              <i data-lucide="arrow-right" class="w-5 h-5"></i>
+            </a>
+            <a href="servicios.html" class="btn-secondary text-base">
+              Ver servicios
+            </a>
+          </div>
+          <div class="flex items-center gap-6 text-sm text-blue-100">
+            <div class="flex items-center gap-2">
+              <i data-lucide="shield-check" class="w-5 h-5 text-accent-500"></i>
+              Seguro incluido
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="star" class="w-5 h-5 text-accent-500 fill-current"></i>
+              4.9/5 (1.248 reseñas)
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero illustration card -->
+        <div class="hidden lg:block animate-slide-right delay-300">
+          <div class="relative">
+            <div class="bg-white rounded-3xl shadow-2xl p-8 max-w-md mx-auto">
+              <div class="flex items-center justify-between mb-6">
+                <h3 class="text-xl font-bold text-gray-900">Cotización rápida</h3>
+                <span class="bg-green-100 text-green-700 text-xs font-bold px-3 py-1 rounded-full">EN VIVO</span>
+              </div>
+              <div class="space-y-4 mb-6">
+                <div class="flex items-center gap-3 p-3 bg-blue-50 rounded-lg">
+                  <i data-lucide="map-pin" class="w-5 h-5 text-brand-700"></i>
+                  <span class="text-sm text-gray-700">Madrid → Barcelona</span>
+                </div>
+                <div class="flex items-center gap-3 p-3 bg-blue-50 rounded-lg">
+                  <i data-lucide="home" class="w-5 h-5 text-brand-700"></i>
+                  <span class="text-sm text-gray-700">Piso 80m² · 3 habitaciones</span>
+                </div>
+                <div class="flex items-center gap-3 p-3 bg-blue-50 rounded-lg">
+                  <i data-lucide="calendar" class="w-5 h-5 text-brand-700"></i>
+                  <span class="text-sm text-gray-700">Fecha flexible</span>
+                </div>
+              </div>
+              <div class="border-t border-gray-100 pt-4">
+                <div class="flex items-center justify-between mb-4">
+                  <span class="text-gray-600">Precio estimado</span>
+                  <span class="text-3xl font-extrabold text-brand-800">$485.000</span>
+                </div>
+                <a href="contacto.html" class="btn-primary w-full justify-center">
+                  Reservar ahora
+                </a>
+              </div>
+            </div>
+            <!-- Decoración -->
+            <div class="absolute -top-6 -right-6 w-24 h-24 bg-accent-500 rounded-full flex items-center justify-center text-white font-bold shadow-xl animate-bounce-soft">
+              ¡-20%!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Wave separator -->
+    <div class="absolute bottom-0 left-0 right-0">
+      <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0 60L60 50C120 40 240 20 360 13.3C480 6.7 600 13.3 720 20C840 26.7 960 33.3 1080 33.3C1200 33.3 1320 26.7 1380 23.3L1440 20V60H1380C1320 60 1200 60 1080 60C960 60 840 60 720 60C600 60 480 60 360 60C240 60 120 60 60 60H0Z" fill="white"/>
+      </svg>
+    </div>
+  </header>
+
+  <!-- ============ SERVICIOS DESTACADOS ============ -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 animate-on-scroll">
+        <span class="text-accent-500 font-bold uppercase tracking-wider text-sm">Lo que hacemos</span>
+        <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mt-2 mb-4">Nuestros servicios</h2>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto">Soluciones completas para cualquier tipo de mudanza, con la garantía de un equipo profesional.</p>
+        <div class="w-20 h-1 divider-gradient mx-auto mt-6"></div>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6" data-render="servicios-destacados"></div>
+
+      <div class="text-center mt-12 animate-on-scroll">
+        <a href="servicios.html" class="btn-outline">
+          Ver todos los servicios
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ¿POR QUÉ ELEGIRNOS? ============ -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 animate-on-scroll">
+        <span class="text-accent-500 font-bold uppercase tracking-wider text-sm">Nuestras ventajas</span>
+        <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mt-2 mb-4">¿Por qué elegirnos?</h2>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto">Miles de clientes confían en nosotros. Estas son las razones.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8" data-render="ventajas"></div>
+    </div>
+  </section>
+
+  <!-- ============ ESTADÍSTICAS ============ -->
+  <section class="py-20 bg-brand-800 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute top-0 left-0 w-96 h-96 bg-accent-500 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
+      <div class="absolute bottom-0 right-0 w-96 h-96 bg-blue-400 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
+    </div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12 animate-on-scroll">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-white">Cifras que nos avalan</h2>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8" data-render="estadisticas"></div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIOS ============ -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12 animate-on-scroll">
+        <span class="text-accent-500 font-bold uppercase tracking-wider text-sm">Testimonios</span>
+        <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mt-2 mb-4">Lo que dicen nuestros clientes</h2>
+      </div>
+
+      <div data-render="testimonios"></div>
+    </div>
+  </section>
+
+  <!-- ============ CTA FINAL ============ -->
+  <section class="py-20 bg-gradient-to-br from-brand-800 via-brand-800 to-brand-900 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-20">
+      <div class="absolute top-10 right-10 w-72 h-72 bg-accent-500 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-on-scroll">
+      <div class="inline-block bg-accent-500/20 text-accent-500 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+        ¿Listo para tu mudanza?
+      </div>
+      <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6">Solicita tu presupuesto gratuito</h2>
+      <p class="text-xl text-blue-100 mb-10 max-w-2xl mx-auto">Te respondemos en menos de 24 horas con un precio cerrado y sin compromiso.</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="contacto.html" class="btn-primary text-base">
+          Pedir cotización
+          <i data-lucide="arrow-right" class="w-5 h-5"></i>
+        </a>
+        <a href="tel:+56223456789" class="btn-secondary text-base">
+          <i data-lucide="phone" class="w-5 h-5"></i>
+          Llamar ahora
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-gray-900 text-gray-300 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <!-- Empresa -->
+        <div>
+          <div class="flex items-center gap-2 mb-4">
+            <div class="w-10 h-10 bg-accent-500 rounded-lg flex items-center justify-center">
+              <i data-lucide="truck" class="w-6 h-6 text-white"></i>
+            </div>
+            <span class="font-extrabold text-xl text-white">Mudanzas<span class="text-accent-500">Express</span></span>
+          </div>
+          <p class="text-gray-400 mb-4">Tu partner de confianza para mudanzas sin estrés desde 2009.</p>
+          <div class="flex gap-3">
+            <a href="#" class="w-9 h-9 bg-gray-800 hover:bg-accent-500 rounded-lg flex items-center justify-center transition" aria-label="Facebook"><i data-lucide="facebook" class="w-4 h-4"></i></a>
+            <a href="#" class="w-9 h-9 bg-gray-800 hover:bg-accent-500 rounded-lg flex items-center justify-center transition" aria-label="Instagram"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+            <a href="#" class="w-9 h-9 bg-gray-800 hover:bg-accent-500 rounded-lg flex items-center justify-center transition" aria-label="Twitter"><i data-lucide="twitter" class="w-4 h-4"></i></a>
+            <a href="#" class="w-9 h-9 bg-gray-800 hover:bg-accent-500 rounded-lg flex items-center justify-center transition" aria-label="LinkedIn"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+          </div>
+        </div>
+
+        <!-- Servicios -->
+        <div>
+          <h4 class="text-white font-bold mb-4">Servicios</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="servicios.html#local" class="hover:text-accent-500 transition">Mudanza local</a></li>
+            <li><a href="servicios.html#nacional" class="hover:text-accent-500 transition">Mudanza nacional</a></li>
+            <li><a href="servicios.html#embalaje" class="hover:text-accent-500 transition">Embalaje profesional</a></li>
+            <li><a href="servicios.html#guardamuebles" class="hover:text-accent-500 transition">Guardamuebles</a></li>
+            <li><a href="servicios.html#oficinas" class="hover:text-accent-500 transition">Mudanza de oficinas</a></li>
+            <li><a href="servicios.html#especial" class="hover:text-accent-500 transition">Transporte especial</a></li>
+          </ul>
+        </div>
+
+        <!-- Enlaces -->
+        <div>
+          <h4 class="text-white font-bold mb-4">Enlaces</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="hover:text-accent-500 transition">Inicio</a></li>
+            <li><a href="nosotros.html" class="hover:text-accent-500 transition">Sobre nosotros</a></li>
+            <li><a href="galeria.html" class="hover:text-accent-500 transition">Galería</a></li>
+            <li><a href="precios.html" class="hover:text-accent-500 transition">Precios</a></li>
+            <li><a href="contacto.html" class="hover:text-accent-500 transition">Contacto</a></li>
+          </ul>
+        </div>
+
+        <!-- Contacto -->
+        <div>
+          <h4 class="text-white font-bold mb-4">Contacto</h4>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-start gap-2">
+              <i data-lucide="map-pin" class="w-4 h-4 text-accent-500 flex-shrink-0 mt-0.5"></i>
+              Av. Apoquindo 4711, Las Condes
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="phone" class="w-4 h-4 text-accent-500"></i>
+              <a href="tel:+56223456789" class="hover:text-accent-500 transition">+56 2 2345 6789</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="mail" class="w-4 h-4 text-accent-500"></i>
+              <a href="mailto:info@mudanzasexpress.cl" class="hover:text-accent-500 transition">info@mudanzasexpress.cl</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="message-circle" class="w-4 h-4 text-accent-500"></i>
+              <a href="#" class="hover:text-accent-500 transition">WhatsApp</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-400">
+        <p>© <span data-year>2026</span> Mudanzas Express. Todos los derechos reservados.</p>
+        <div class="flex gap-6">
+          <a href="privacidad.html" class="hover:text-accent-500 transition">Privacidad</a>
+          <a href="terminos.html" class="hover:text-accent-500 transition">Términos</a>
+          <a href="contacto.html" class="hover:text-accent-500 transition">Contacto</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <a href="#" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+    <i data-lucide="message-circle" class="w-7 h-7"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>
